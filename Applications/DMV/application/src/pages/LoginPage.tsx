@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 const LoginPage: React.FC = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [showPassword, setShowPassword] = React.useState(false);
@@ -12,6 +13,8 @@ const LoginPage: React.FC = () => {
     e.preventDefault();
     // Handle login logic here
     console.log('Login attempt with:', { email, password });
+    // Navigate to account verification page
+    navigate('/account-verification');
   };
 
   return (

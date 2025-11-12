@@ -52,12 +52,18 @@ const DLRenewalPage: React.FC = () => {
                 </p>
 
                 <div className="space-y-3 mb-6">
-                  <button className="w-40 bg-dmv-blue text-white px-6 py-2.5 rounded-full font-bold text-base hover:bg-opacity-90 transition-colors">
+                  <Link
+                    to="/login"
+                    className="w-40 bg-dmv-blue text-white px-6 py-2.5 rounded-full font-bold text-base hover:bg-opacity-90 transition-colors inline-block text-center"
+                  >
                     Renew DL
-                  </button>
-                  <button className="w-40 bg-dmv-blue text-white px-6 py-2.5 rounded-full font-bold text-base hover:bg-opacity-90 transition-colors block">
+                  </Link>
+                  <Link
+                    to="/login"
+                    className="w-40 bg-dmv-blue text-white px-6 py-2.5 rounded-full font-bold text-base hover:bg-opacity-90 transition-colors block text-center"
+                  >
                     Renew ID
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
