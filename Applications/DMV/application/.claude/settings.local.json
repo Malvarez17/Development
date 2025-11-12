@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm run dev:*)",
+      "Read(//Users/michael.alvarez/Documents/Repos/DMVCA/applicationHTMLFiles/**)",
+      "Read(//Users/michael.alvarez/Desktop/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

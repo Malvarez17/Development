@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dmv-blue: #003A70;
+  --color-dmv-darkBlue: #002855;
+  --color-dmv-lightBlue: #0066B3;
+  --color-dmv-gold: #FDB81E;
+  --color-dmv-darkGold: #C98A00;
+
+  --color-neutral-lightGray: #F5F5F5;
+  --color-neutral-mediumGray: #D1D1D1;
+  --color-neutral-darkGray: #666666;
+  --color-neutral-charcoal: #333333;
+
+  --color-status-success: #28A745;
+  --color-status-warning: #FFC107;
+  --color-status-error: #DC3545;
+  --color-status-info: #17A2B8;
+
+  --color-background-page: #F8F8F8;
+  --color-background-card: #FFFFFF;
+  --color-background-hover: #F0F0F0;
+
+  --font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Playfair Display', serif;
+}
+
+/* Custom fonts */
+body {
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-dmv-lightBlue);
+  outline-offset: 2px;
+}
